@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WTaAycD1Tm0r8sAJLNiftyIzjOssGE98wlwNCSCIYs3FXyUwUDsDRmCkVsrVTPKr6SNMQs2Yw7eejxYPqADIqg==",
+  "dgSpecHash": "6nyxTujrec9BH2CgYMIH/l+3kgHt/7Zl+HtMtn1fb7BLGH/DdF4sUdA6XKatonuVcpxovVNNU0UN4bYapcL1Fg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\fabio\\source\\repos\\POA.SchoolManager\\POA.SchoolManagerTests\\POA.SchoolManagerTests.csproj",
+  "projectFilePath": "C:\\Users\\fabio\\source\\repos\\POA.SchoolManager\\src\\POA.SchoolManagerTests\\POA.SchoolManagerTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fabio\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\fabio\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",

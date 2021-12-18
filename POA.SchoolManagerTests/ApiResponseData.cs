@@ -30,5 +30,8 @@ namespace POA.SchoolManagerTests
         public string Cep { get; set; }
         public string Latitude { get; set; }
         public string Longitute { get; set; }
+        public string Email { get; set; }
+        public string Url_WebSite { get; set; }
+        public string Telefone { get; set; }
     }
 }
