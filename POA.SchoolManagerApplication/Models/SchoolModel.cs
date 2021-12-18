@@ -1,23 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace POA.SchoolManagerTests
+﻿namespace POA.SchoolManagerApplication.Models
 {
-    public class ApiResponseData
-    {
-        public string Help { get; set; }
-        public bool Success { get; set; }
-        public ApiResult Result { get; set; }
-    }
-
-    public class ApiResult
-    {
-        public bool Include_Total { get; set; }
-        public Guid Resource_Id { get; set; }
-        public IEnumerable<School> Records { get; set; }
-    }
-
-    public class School
+    public class SchoolModel
     {
         public string Dep_Admionistrativa { get; set; }
         public string Tipo { get; set; }
