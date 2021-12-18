@@ -6613,11 +6613,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fabio\\source\\repos\\POA.SchoolManager\\POA.SchoolManagerTests\\POA.SchoolManagerTests.csproj",
+      "projectUniqueName": "C:\\Users\\fabio\\source\\repos\\POA.SchoolManager\\src\\POA.SchoolManagerTests\\POA.SchoolManagerTests.csproj",
       "projectName": "POA.SchoolManagerTests",
-      "projectPath": "C:\\Users\\fabio\\source\\repos\\POA.SchoolManager\\POA.SchoolManagerTests\\POA.SchoolManagerTests.csproj",
+      "projectPath": "C:\\Users\\fabio\\source\\repos\\POA.SchoolManager\\src\\POA.SchoolManagerTests\\POA.SchoolManagerTests.csproj",
       "packagesPath": "C:\\Users\\fabio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fabio\\source\\repos\\POA.SchoolManager\\POA.SchoolManagerTests\\obj\\",
+      "outputPath": "C:\\Users\\fabio\\source\\repos\\POA.SchoolManager\\src\\POA.SchoolManagerTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fabio\\AppData\\Roaming\\NuGet\\NuGet.Config",
