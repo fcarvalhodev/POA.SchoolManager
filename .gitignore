@@ -11,9 +11,11 @@
 *.sln.docstates
 *.vs/*
 *.suo
-
+*/src/.vs/*
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
+*.TestStore
+*.cache
 
 # Mono auto generated files
 mono_crash.*

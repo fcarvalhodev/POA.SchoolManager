@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Newtonsoft.Json;
 using RestSharp;
 using System;
+using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
@@ -47,18 +47,13 @@ namespace POA.SchoolManagerTests
         }
 
         [TestMethod]
-        public async Task GivenAddressSearch_MustSearchByAddress_WhenCidadeCepOrBairroIsNotNullTheUrlAsync()
+        public async Task GivenAddressSearch_MustSearchByAddress_WhenValueNotNullTheUrlAsync()
         {
             try
             {
                 //Arrange
-                string logradouro = "PCA GARIBALDI";
-                string cep = "90050020";
-                string bairro = "AZENHA";
-                string query = $"/datastore_search_sql?sql=SELECT EMAIL, URL_WEBSITE, TELEFONE, NOME, LOGRADOURO, NUMERO, BAIRRO, CEP, LATITUDE, LONGITUDE " +
-                               $"from \"5579bc8e-1e47-47ef-a06e-9f08da28dec8\" " +
-                               $"WHERE (LOGRADOURO LIKE '{logradouro}' AND BAIRRO LIKE '{bairro}')" +
-                               $"OR (CEP = '{cep}')";
+                string value = "AZENHA";
+                string query = $"/datastore_search?resource_id=5579bc8e-1e47-47ef-a06e-9f08da28dec8&q={value}";
 
                 //Act
                 var request = new RestRequest(query, DataFormat.Json);
