@@ -198,3 +198,13 @@ C:\Users\fabio\source\repos\POA.SchoolManager\src\POA.SchoolManagerTests\obj\Deb
 C:\Users\fabio\source\repos\POA.SchoolManager\src\POA.SchoolManagerTests\obj\Debug\netcoreapp3.1\POA.SchoolManagerTests.pdb
 C:\Users\fabio\source\repos\POA.SchoolManager\src\POA.SchoolManagerTests\obj\Debug\netcoreapp3.1\POA.SchoolManagerTests.genruntimeconfig.cache
 C:\Users\fabio\source\repos\POA.SchoolManager\src\POA.SchoolManagerTests\obj\Debug\netcoreapp3.1\POA.SchoolManagerTests.csproj.AssemblyReference.cache
+C:\Users\fabio\source\repos\POA.SchoolManager\src\POA.SchoolManagerTests\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Users\fabio\source\repos\POA.SchoolManager\src\POA.SchoolManagerTests\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Users\fabio\source\repos\POA.SchoolManager\src\POA.SchoolManagerTests\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\fabio\source\repos\POA.SchoolManager\src\POA.SchoolManagerTests\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\fabio\source\repos\POA.SchoolManager\src\POA.SchoolManagerTests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\fabio\source\repos\POA.SchoolManager\src\POA.SchoolManagerTests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\fabio\source\repos\POA.SchoolManager\src\POA.SchoolManagerTests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\fabio\source\repos\POA.SchoolManager\src\POA.SchoolManagerTests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\fabio\source\repos\POA.SchoolManager\src\POA.SchoolManagerTests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\fabio\source\repos\POA.SchoolManager\src\POA.SchoolManagerTests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll

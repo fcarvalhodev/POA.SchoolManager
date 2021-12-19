@@ -2,10 +2,10 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json;
 using Microsoft.AspNetCore.Mvc;
 using POA.SchoolManagerApplication.Config;
+using POA.SchoolManagerApplication.Services;
 
 namespace POA.SchoolManagerApplication
 {
@@ -23,6 +23,8 @@ namespace POA.SchoolManagerApplication
             ApiVersionManager(services);
 
             services.AddControllers();
+
+            DependencyInjection(services);
 
             services.AddSwagerDocumentation();
         }
@@ -79,6 +81,11 @@ namespace POA.SchoolManagerApplication
             app.UseAuthentication();
 
             app.UseAuthorization();
+        }
+
+        private static void DependencyInjection(IServiceCollection services)
+        {
+            services.AddTransient<ISchoolsService, SchoolsService>();
         }
     }
 }
