@@ -13,7 +13,7 @@ export class ReadingComponent implements OnInit {
     private _jsonURL = 'assets/data.json';
     constructor(private http: HttpClient) {
         this.getJSON().subscribe(data => {
-            console.log(data);
+            //console.log(data);
         });
     }
 

@@ -38,7 +38,7 @@ namespace POA.SchoolManagerApplication.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(ApiResponse<SchoolModel>), StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<ApiResponse<SchoolModel>>> GetByParameters([FromBody] SearchSchoolRequest request)
+        public async Task<ActionResult<ApiResponse<SchoolModel>>> GetByParameters([FromQuery] SearchSchoolRequest request)
         {
             return await _schoolService.GetByQuery(request);
         }

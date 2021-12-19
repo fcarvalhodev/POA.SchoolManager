@@ -305,17 +305,19 @@
 <div class="container">
   <form>
     <div class="form-group">
-      <h1 class="text-center text-primary">Search School</h1>
-      <div class="input-group-prepend">
-        <input disabled type="text" class="form-control" placeholder="Search" name="todo">
-        <span class="input-group-text" style="margin-left: 0.5em;">
-          Search
-        </span>
-      </div>
+      <br />
+      <br />
+      <br />
+      <h1 class="text-center text-primary">Gerenciamento Escolar</h1>
+      <p class="lead">
+        O cadastro das escolas traz informações relativas às escolas da rede própria e conveniada, tais como: nome,
+        endereço, telefone, bairro, região do OP a que pertence a escola, região do Conselho Tutelar, situação de
+        credenciamento, mantenedora da escola, dependência administrativa entre outros.
+      </p>
     </div>
   </form>
-  <ag-grid-angular style="width: 100%; height: 500px;" class="ag-theme-alpine" [rowData]="rowData | async"
-    [columnDefs]="columnDefs">
+  <ag-grid-angular style="width: 100%; height: 500px;" [pagination]="true" [paginationPageSize]="50"
+    class="ag-theme-alpine" [rowData]="rowData | async" [columnDefs]="columnDefs">
   </ag-grid-angular>
 </div>
 
