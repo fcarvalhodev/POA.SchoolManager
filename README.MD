@@ -14,9 +14,8 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Integrar API e Página web.
 - [x] Disponibilizar filtro na grid para as escolas.
 - [x] Linkar mapa ao endereço das escolas.
+- [ ] Usar serviço de rota para escolas próximas.
 - [ ] Ordenar por distância escolas mais próximas.
-- [ ] Usar serviço de rota para um mapa com os dados das escolas.
-- [ ] Integrar API e Página web.
 - [ ] Disponibilizar ambos sites em uma URL.
 
 ## 💻 Pré-requisitos
