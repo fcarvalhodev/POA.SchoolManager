@@ -24,13 +24,23 @@ namespace POA.SchoolManagerApplication.Controllers
             return "OK";
         }
 
-        [Route("")]
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(ApiResponse<SchoolModel>), StatusCodes.Status404NotFound)]
         public async Task<ActionResult<ApiResponse<SchoolModel>>> GetSchools()
         {
            return await _schoolService.GetAll();
+        }
+
+        [Route("GetByQuery")]
+        [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(ApiResponse<SchoolModel>), StatusCodes.Status404NotFound)]
+        public async Task<ActionResult<ApiResponse<SchoolModel>>> GetByParameters([FromBody] SearchSchoolRequest request)
+        {
+            return await _schoolService.GetByQuery(request);
         }
     }
 }

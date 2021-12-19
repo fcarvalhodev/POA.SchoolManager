@@ -22,14 +22,16 @@ namespace POA.SchoolManagerApplication.Services
         {
             try
             {
-                string query = "/datastore_search?resource_id=5579bc8e-1e47-47ef-a06e-9f08da28dec8&limit=10";
+                string query = $"/datastore_search_sql?sql=SELECT EMAIL, URL_WEBSITE, TELEFONE, NOME, LOGRADOURO, NUMERO, BAIRRO, CEP, LATITUDE, LONGITUDE " +
+                          $"from \"5579bc8e-1e47-47ef-a06e-9f08da28dec8\" " +
+                          $"WHERE CODIGO IS NOT NULL ";
 
-                var request = new RestRequest(query, DataFormat.Json);
-                ApiResponse<SchoolModel> response = await _client.GetAsync<ApiResponse<SchoolModel>>(request, _cancellationTokenSource.Token);
+                var requestAll = new RestRequest(query, DataFormat.Json);
+                ApiResponse<SchoolModel> response = await _client.GetAsync<ApiResponse<SchoolModel>>(requestAll, _cancellationTokenSource.Token);
 
                 return response;
-
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 return new ApiResponse<SchoolModel> { Success = false, Message = ex.Message };
             }
@@ -37,7 +39,38 @@ namespace POA.SchoolManagerApplication.Services
 
         public async Task<ApiResponse<SchoolModel>> GetByQuery(SearchSchoolRequest request)
         {
-            throw new System.NotImplementedException();
+            try
+            {
+                if (request.IsValid)
+                {
+                    string query = $"/datastore_search_sql?sql=SELECT EMAIL, URL_WEBSITE, TELEFONE, NOME, LOGRADOURO, NUMERO, BAIRRO, CEP, LATITUDE, LONGITUDE " +
+                                   $"from \"5579bc8e-1e47-47ef-a06e-9f08da28dec8\" " +
+                                   $"WHERE CODIGO IS NOT NULL ";
+
+                    if (!string.IsNullOrEmpty(request.Logradouro))
+                        query = query + $" AND LOGRADOURO LIKE '{request.Logradouro}%'";
+                    if (!string.IsNullOrEmpty(request.Bairro))
+                        query = query + $" AND BAIRRO LIKE '{request.Bairro}%'";
+                    if (!string.IsNullOrEmpty(request.Cep))
+                        query = query + $" AND CEP = {request.Cep}";
+
+                    var requestByQry = new RestRequest(query, DataFormat.Json);
+                    ApiResponse<SchoolModel> response = await _client.GetAsync<ApiResponse<SchoolModel>>(requestByQry, _cancellationTokenSource.Token);
+
+                    return response;
+                }
+                else
+                {
+                    string notificacoes = string.Join(" ", request.Notifications);
+                    return new ApiResponse<SchoolModel> { Success = false, Message = notificacoes };
+                }
+
+            }
+            catch (Exception ex)
+            {
+              
+                return new ApiResponse<SchoolModel> { Success = false, Message = ex.Message };
+            }
         }
     }
 }
