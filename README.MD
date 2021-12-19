@@ -2,6 +2,8 @@
 
 > Projeto gerenciador de escolas de Porto Alegre.
 
+- WebApi: https://poaschool.azurewebsites.net/swagger/index.html
+
 ### Ajustes e melhorias
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
