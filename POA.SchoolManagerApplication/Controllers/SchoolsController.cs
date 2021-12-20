@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using POA.SchoolManagerApplication.Models;
 using POA.SchoolManagerApplication.Services;
@@ -19,12 +20,14 @@ namespace POA.SchoolManagerApplication.Controllers
 
         [Route("health")]
         [HttpGet]
+        [AllowAnonymous]
         public string Health()
         {
             return "OK";
         }
 
         [HttpGet]
+        [AllowAnonymous]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(ApiResponse<SchoolModel>), StatusCodes.Status404NotFound)]
@@ -35,6 +38,7 @@ namespace POA.SchoolManagerApplication.Controllers
 
         [Route("GetByQuery")]
         [HttpGet]
+        [AllowAnonymous]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(ApiResponse<SchoolModel>), StatusCodes.Status404NotFound)]

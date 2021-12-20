@@ -1,34 +1,49 @@
-﻿using System.Text.Json.Serialization;
+﻿using Newtonsoft.Json;
 
 namespace POA.SchoolManagerApplication.Models
 {
     public class SchoolModel
     {
-        [JsonPropertyName("dep_administrativa")]
-        public string Dep_Administrativa { get; set; }
-        [JsonPropertyName("tipo")]
+        [JsonPropertyAttribute("dep_administrativa")]
+        public string Dep_administrativa { get; set; }
+
+        [JsonPropertyAttribute("tipo")]
         public string Tipo { get; set; }
-        [JsonPropertyName("codigo")]
+
+        [JsonPropertyAttribute("codigo")]
         public string Codigo { get; set; }
-        [JsonPropertyName("nome")]
+
+        [JsonPropertyAttribute("nome")]
         public string Nome { get; set; }
-        [JsonPropertyName("abr_nome")]
+
+        [JsonPropertyAttribute("abr_nome")]
         public string Abr_Nome { get; set; }
-        [JsonPropertyName("numero")]
+
+        [JsonPropertyAttribute("logradouro")]
+        public string Logradouro { get; set; }
+
+        [JsonPropertyAttribute("numero")]
         public int Numero { get; set; }
-        [JsonPropertyName("bairro")]
+
+        [JsonPropertyAttribute("bairro")]
         public string Bairro { get; set; }
-        [JsonPropertyName("cep")]
+
+        [JsonPropertyAttribute("cep")]
         public string Cep { get; set; }
-        [JsonPropertyName("latitude")]
+
+        [JsonPropertyAttribute("latitude")]
         public string Latitude { get; set; }
-        [JsonPropertyName("longitude")]
-        public string Longitute { get; set; }
-        [JsonPropertyName("email")]
+
+        [JsonPropertyAttribute("longitude")]
+        public string Longitude { get; set; }
+
+        [JsonPropertyAttribute("email")]
         public string Email { get; set; }
-        [JsonPropertyName("url_webSite")]
+
+        [JsonPropertyAttribute("url_website")]
         public string Url_WebSite { get; set; }
-        [JsonPropertyName("telefone")]
+
+        [JsonPropertyAttribute("telefone")]
         public string Telefone { get; set; }
     }
 }

@@ -47,7 +47,8 @@ export class AppComponent {
   }
 
   async GetAll() {
-    let url = "https://localhost:44350/api/v1/Schools";
+    let url = "https://poaschool.azurewebsites.net/api/v1/Schools"
+    //let url = "https://localhost:44350/api/v1/Schools";
 
     let response: ResponseType = {
       message: "",

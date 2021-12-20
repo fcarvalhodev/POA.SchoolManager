@@ -22,7 +22,7 @@ namespace POA.SchoolManagerApplication
         {
             ApiVersionManager(services);
 
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson();
 
             DependencyInjection(services);
 
@@ -37,18 +37,14 @@ namespace POA.SchoolManagerApplication
 
             app.UseRouting();
 
-            app.UseStaticFiles();
-
             CorsConfiguration(app);
-
-            app.UseAuthorization();
-
-            app.UseSwaggerDocumentation();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+
+            app.UseSwaggerDocumentation();
         }
 
         private static void ApiVersionManager(IServiceCollection services)

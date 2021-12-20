@@ -19,6 +19,7 @@ namespace POA.SchoolManagerTests
         {
             Uri url = new Uri("https://dadosabertos.poa.br/api/3/action", UriKind.Absolute);
             _client = new RestClient(url);
+            _client.Timeout = 10000;
             _cancellationTokenSource = new CancellationTokenSource();
         }
 

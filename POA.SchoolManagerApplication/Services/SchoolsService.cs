@@ -22,7 +22,7 @@ namespace POA.SchoolManagerApplication.Services
         {
             try
             {
-                string query = $"/datastore_search_sql?sql=SELECT EMAIL, URL_WEBSITE, TELEFONE, NOME, LOGRADOURO, NUMERO, BAIRRO, CEP, LATITUDE, LONGITUDE " +
+                string query = $"/datastore_search_sql?sql=SELECT EMAIL, URL_WEBSITE, DEP_ADMINISTRATIVA, TELEFONE, NOME, ABR_NOME, LOGRADOURO, NUMERO, BAIRRO, CEP, LATITUDE, LONGITUDE, TIPO " +
                           $"from \"5579bc8e-1e47-47ef-a06e-9f08da28dec8\" " +
                           $"WHERE CODIGO IS NOT NULL ";
 
@@ -43,7 +43,7 @@ namespace POA.SchoolManagerApplication.Services
             {
                 if (request.IsValid)
                 {
-                    string query = $"/datastore_search_sql?sql=SELECT EMAIL, URL_WEBSITE, TELEFONE, NOME, LOGRADOURO, NUMERO, BAIRRO, CEP, LATITUDE, LONGITUDE " +
+                    string query = $"/datastore_search_sql?sql=SELECT EMAIL, URL_WEBSITE, DEP_ADMINISTRATIVA, TELEFONE, NOME, ABR_NOME, LOGRADOURO, NUMERO, BAIRRO, CEP, LATITUDE, LONGITUDE, TIPO " +
                                    $"from \"5579bc8e-1e47-47ef-a06e-9f08da28dec8\" " +
                                    $"WHERE CODIGO IS NOT NULL ";
 
