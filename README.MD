@@ -59,3 +59,13 @@ npm install
 ng serve
 ```
 
+Se você estiver rodando local, troque as URL's no arquivo app.component.ts
+  
+```
+let url = "https://poaschool.azurewebsites.net/api/v1/Schools"
+//let url = "https://localhost:44350/api/v1/Schools";
+```
+  
+  
+
+
