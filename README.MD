@@ -2,6 +2,8 @@
 
 > Projeto gerenciador de escolas de Porto Alegre.
 
+- WebApi: https://poaschool.azurewebsites.net/swagger/index.html
+
 ### Ajustes e melhorias
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
@@ -14,9 +16,8 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Integrar API e Página web.
 - [x] Disponibilizar filtro na grid para as escolas.
 - [x] Linkar mapa ao endereço das escolas.
+- [ ] Usar serviço de rota para escolas próximas.
 - [ ] Ordenar por distância escolas mais próximas.
-- [ ] Usar serviço de rota para um mapa com os dados das escolas.
-- [ ] Integrar API e Página web.
 - [ ] Disponibilizar ambos sites em uma URL.
 
 ## 💻 Pré-requisitos
